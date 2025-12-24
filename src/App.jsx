@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import IntroPage from "./components/IntroPage";
+import OrderPage from './components/OrderPage';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<IntroPage />} />
+        <Route path="/order" element={<OrderPage />} />
       </Routes>
     </BrowserRouter>  
   )
